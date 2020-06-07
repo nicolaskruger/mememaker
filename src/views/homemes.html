@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/mememake">makememe</a>
+    {% for meme in memes %}
+        <form action="/killthememe" method="POST">
+            <h1>{{meme.mememaker}}</h1>
+            <button type="submit" name= id value= {{meme.id}}>
+            X
+            </button>
+            <img src="{{meme.image}}" alt="" method="POST">
+        </form>
+            
+    {% endfor %}
+</body>
+</html>

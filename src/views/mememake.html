@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">see the memes</a>
+    <form action="/savethememe" method="POST">
+        <fieldset>
+            <div class="field">
+                <label for="name">mememaker</label>
+                <input type="text" name="mememaker" required="required">
+            </div>
+            <div class="field">
+                <label for="name">meme</label>
+                <input type="text" name="image" required="required">
+            </div>
+        </fieldset>
+        <button type="submit">
+            make the meme
+        </button>
+    </form>
+    <script src="script/memekiler.js"></script>
+</body>
+</html>
